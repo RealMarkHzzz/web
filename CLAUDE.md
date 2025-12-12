@@ -2,92 +2,121 @@
 
 This file provides guidance to Claude Code (claude.ai/code) when working with code in this repository.
 
-## Project Overview
+## Quick Start
 
-This is a static educational website for secondary educators about understanding and supporting students experiencing family breakdown. The project is a standalone HTML/CSS/JavaScript single-page application (SPA) created for a Master of Teaching course assignment.
-
-## Architecture
-
-- **Single File Application**: All code is contained in `index.html` (607 lines)
-- **No Build Process**: Pure HTML/CSS/JavaScript with CDN dependencies
-- **Technology Stack**:
-  - HTML5 with semantic structure
-  - Tailwind CSS (via CDN)
-  - Vanilla JavaScript for navigation
-  - Google Fonts (Playfair Display for headings, Inter for body)
-  - Lucide Icons (via CDN)
-  - Unsplash for external images
-
-## Website Structure
-
-The SPA has 8 main sections accessed through JavaScript navigation:
-1. **Home** - Introduction and overview
-2. **Prevalence** - Statistics on family breakdown
-3. **Identification** - Signs to watch for in students
-4. **Neurobiology** - Brain development impacts
-5. **Vulnerability** - Risk factors
-6. **Strategies** - Support strategies for educators
-7. **Legal** - Legal considerations
-8. **Resources** - References and additional resources
-
-## Key Functions
-
-- `navigateTo(sectionId)` - Handles SPA navigation between sections
-- `toggleMobileMenu()` - Controls mobile menu visibility
-- `lucide.createIcons()` - Initializes Lucide icon system
-
-## Common Development Tasks
-
-### Testing the Website
-Since there's no build process:
 ```bash
-# Open directly in browser
+# Open in browser directly
 open index.html
 
-# Or serve locally (optional)
-python3 -m http.server 8000
+# Or serve locally
+python -m http.server 8000
 # Then visit http://localhost:8000
 ```
 
-### Making Changes
-- Edit `index.html` directly
-- All CSS is embedded in `<style>` tags in the HTML head
-- JavaScript is at the bottom of the HTML file
-- No compilation or build steps required
+## Project Overview
 
-### Adding New Dependencies
-- Use CDN links for external libraries
-- Add scripts/styles in the `<head>` section
-- Currently uses Tailwind CSS, Lucide Icons, and Google Fonts
+**"Family Breakdown & The Secondary Educator"** - An educational website for secondary educators about supporting students experiencing family breakdown.
 
-## Important Implementation Details
+**Project Details:**
+- Student ID: 110359418
+- Student Name: Zhe He
+- Course: EDUC 5261 Foundations of Learning and Development: A Child Centred Approach
 
-### Navigation System
-- Uses `display: none/block` to show/hide sections
-- Each section has `class="page-section hidden"` initially
-- Navigation updates active states and scrolls to top
+This is a Single-File Application (SFA) with all HTML, CSS, and JavaScript contained in one `index.html` file.
 
-### Responsive Design
-- Mobile-first approach with Tailwind CSS
-- Hamburger menu for mobile navigation
-- Custom CSS for print media styles
+### Architecture
 
-### Content Structure
-- Academic focus with citations to Australian Institute of Family Studies
-- Includes tables, custom styled boxes, and educational content
-- Print-optimized with custom CSS
+**Single-Page Application (SPA) Structure:**
+- All 8 sections are in one HTML file, shown/hidden via JavaScript
+- No build process - pure static HTML/CSS/JavaScript
+- Navigation system uses `display: none/block` to switch between sections
+- IDs: `home`, `prevalence`, `identification`, `brain`, `vulnerability`, `strategies`, `legal`, `resources`
 
-## Potential Future Enhancements
+**Key Components:**
+- **Navigation**: Desktop sidebar + mobile hamburger menu
+- **Content Sections**: 8 educational pages with academic citations
+- **Styling**: Tailwind CSS (CDN) + custom embedded CSS
+- **Icons**: Lucide Icons (CDN)
+- **Fonts**: Google Fonts (Playfair Display, Inter)
 
-If adding more complex features:
-1. Consider adding a build process (npm scripts)
-2. Could migrate to a framework like React/Vue for better state management
-3. Currently has permission to use npm for potential Node.js integration
-4. Could add interactive quizzes or form submissions
-5. PDF export functionality could be valuable for educators
+### Development Commands
 
-## File Organization
+Since this is a static site with no build process:
 
-- Root directory: Contains only `index.html`, `.claude/`, and potential future assets
-- No subdirectories currently
-- All styles and scripts are embedded in the HTML file
+```bash
+# Serve locally (any HTTP server)
+python -m http.server 8000
+# or
+npx serve .
+
+# Open directly in browser (no server needed)
+open index.html
+
+# Git operations (permitted via settings)
+git pull origin main
+git push origin main
+```
+
+### File Structure
+
+```
+/
+├── index.html          # Main application file (ALL code)
+├── readme.md           # Project info (Chinese)
+├── CLAUDE.md           # This file
+└── .claude/
+    └── settings.local.json  # Claude Code permissions
+```
+
+### Content Management
+
+When editing content:
+1. Each section is wrapped in `<section id="section-name" class="page-section hidden fade-in">`
+2. Navigation is handled by `navigateTo(sectionId)` function
+3. All citations follow APA7 format as inline spans
+4. Maintain visual consistency with existing color schemes and layouts
+
+### Styling Guidelines
+
+- Use Tailwind utility classes for most styling
+- Custom CSS is embedded in `<style>` tags
+- Color scheme by section:
+  - Introduction: teal gradients
+  - Crisis/Safety: red tones
+  - Youth Support: blue tones
+  - Legal: green/slate tones
+  - Resources: purple/pink tones
+- Responsive design with `md:` breakpoint at 768px
+
+### Important Implementation Details
+
+1. **Icon Management**: Lucide icons must be initialized with `lucide.createIcons()` after DOM changes
+2. **Active Navigation**: Update both desktop sidebar (`.nav-item`) and mobile menu (`.nav-link`) classes
+3. **Scroll Behavior**: Navigation scrolls `.main-container` to top, not window
+4. **Mobile Menu**: Auto-close after navigation
+
+### Academic Standards
+
+All content must:
+- Include proper APA7 inline citations
+- Use provided sources only (AIFS, NSW Government, etc.)
+- Maintain academic tone appropriate for secondary educators
+- Follow evidence-based practices
+
+### Known Limitations
+
+- Single file can become large (currently ~2700 lines)
+- No state management beyond DOM manipulation
+- No build optimization or minification
+- All dependencies loaded from CDN
+- No automated testing framework
+
+### Future Enhancement Possibilities
+
+The project is structured to easily accommodate:
+- Addition of npm build process (permissions already configured)
+- Migration to React/Vue framework
+- PDF export functionality for academic citations
+- Interactive assessments or quizzes
+- Backend integration for progress tracking
+- Automated testing framework integration
