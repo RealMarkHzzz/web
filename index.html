@@ -469,10 +469,6 @@
                 <i data-lucide="lightbulb" class="w-5 h-5"></i>
                 <span>Strategies</span>
             </button>
-            <button onclick="navigateTo('legal')" class="nav-item" id="nav-legal">
-                <i data-lucide="scale" class="w-5 h-5"></i>
-                <span>Legal</span>
-            </button>
             <button onclick="navigateTo('resources')" class="nav-item" id="nav-resources">
                 <i data-lucide="book-open" class="w-5 h-5"></i>
                 <span>Resources</span>
@@ -485,26 +481,17 @@
         
         <!-- PAGE 1: HOME -->
         <section id="home" class="page-section fade-in">
-            <div class="text-center mb-16">
+            <div class="text-center mb-2">
                 <h2 class="text-5xl serif-font font-bold leading-tight mb-8 border-b-4 border-black pb-4 inline-block">
                     Navigating Family Breakdown
                 </h2>
-                <p class="text-xl leading-relaxed font-medium">
-                    Understanding the invisible burden students carry
-                </p>
             </div>
-
-            <!-- Image Placeholder -->
-            <figure class="mb-16 border-2 border-black p-2 bg-white">
-                <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?auto=format&fit=crop&q=80&w=1000" alt="Diverse group of secondary students walking in a school hallway, representing the 1 in 5 statistic." class="w-full h-64 md:h-80 object-cover">
-                <figcaption class="text-xs text-gray-700 mt-3 text-right italic font-semibold">Figure 1. Diverse secondary student population.</figcaption>
-            </figure>
 
             <div class="space-y-16">
                 <!-- Introduction -->
                 <div class="text-center max-w-3xl mx-auto">
                     <p class="text-lg leading-relaxed border-t border-b border-black py-8">
-                        In every Australian secondary classroom, <span class="font-bold">1 in 5 students</span> is navigating family breakdown. This comprehensive guide equips educators with trauma-informed strategies to support these vulnerable students.
+                        In every Australian secondary classroom, <span class="font-bold">1 in 5 students</span> is navigating family breakdown. This impacts academic performance through missed deadlines, poor concentration, and emotional withdrawal. During adolescence—a critical period of neuroplasticity—students face a 3-4 year gap between parental separation and divorce finalization, often coinciding with their secondary years.
                     </p>
                 </div>
 
@@ -515,15 +502,22 @@
                         <div class="border-r-2 border-black p-6">
                             <div class="text-4xl font-bold">47,216</div>
                             <p class="text-sm mt-2 font-semibold">Divorces in 2024</p>
+                            <p class="text-xs text-gray-500 mt-1"><a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Source: Australian Bureau of Statistics</a></p>
                         </div>
                         <div class="border-r-2 border-black p-6">
                             <div class="text-4xl font-bold">47%</div>
                             <p class="text-sm mt-2 font-semibold">Involve children</p>
+                            <p class="text-xs text-gray-500 mt-1"><a href="https://aifs.gov.au/research/facts-and-figures/divorces-australia-2024" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Source: Australian Institute of Family Studies</a></p>
                         </div>
                         <div class="p-6">
                             <div class="text-4xl font-bold">1 in 5</div>
                             <p class="text-sm mt-2 font-semibold">Students affected</p>
+                            <p class="text-xs text-gray-500 mt-1">Including de facto relationships</p>
+                            <p class="text-xs text-gray-500"><a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Source: Podwinski & Laletas, 2025</a></p>
                         </div>
+                    </div>
+                    <div class="mt-6 bg-gray-50 p-4 border-l-4 border-black">
+                        <p class="text-sm"><strong>Timeline Context:</strong> The median duration from marriage to divorce is 13.2 years, but final separation occurs at ~9 years—leaving a 3-4 year gap that often covers secondary school years.</p>
                     </div>
                     <div class="mt-8 text-center">
                         <button onclick="navigateTo('prevalence')" class="border-2 border-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
@@ -536,10 +530,13 @@
                 <div class="border-l-8 border-black p-8">
                     <h4 class="text-2xl serif-font mb-6 font-bold">Identifying Students in Need</h4>
                     <p class="mb-4 text-base leading-relaxed">
-                        Look beyond the behavior. The bright student slipping, the quiet withdrawer, the reactive outburst—these may all be signals of deeper struggles.
+                        Signs of distress often look similar to normal adolescent behavior. Key indicators include school refusal—different from truancy—which involves strong emotional distress about attending school.
                     </p>
-                    <p class="text-sm font-semibold">
-                        Understanding the difference between truancy and school refusal is critical for appropriate intervention.
+                    <p class="mb-4 text-base leading-relaxed">
+                        Students may show internalizing behaviors (withdrawal, missed deadlines) or externalizing behaviors (defiance, aggression)—often reflecting the conflict they experience at home.
+                    </p>
+                    <p class="text-sm italic bg-yellow-50 p-3 border-l-4 border-yellow-400">
+                        The challenges of living between two households can worsen these issues through logistical complexity.
                     </p>
                     <div class="mt-8">
                         <button onclick="navigateTo('identification')" class="border-2 border-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
@@ -552,7 +549,15 @@
                 <div class="border-t-8 border-b-8 border-black py-12">
                     <h4 class="text-2xl serif-font mb-6 text-center font-bold">The Developing Brain</h4>
                     <p class="text-center mb-8 max-w-2xl mx-auto text-base leading-relaxed">
-                        Adolescence is a critical period of neuroplasticity. The stress from family breakdown can overwhelm developing brains, leaving fewer resources for learning.
+                        During adolescence—critical period of neuroplasticity—the developing brain has heightened sensitivity to environmental stressors.
+                    </p>
+                    <div class="max-w-3xl mx-auto mb-8 bg-blue-50 p-6 border-l-4 border-blue-400">
+                        <p class="text-sm">
+                            <strong>Research Finding:</strong> Higher parental negative emotion triggers increased activation in the adolescent amygdala (threat detection center), and constant emotional regulation exhausts regulatory resources needed for academic learning.
+                        </p>
+                    </div>
+                    <p class="text-center italic">
+                        This neurobiological change means students often misinterpret cognitive deficits as lack of motivation, when they're actually experiencing physiological responses to trauma.
                     </p>
                     <div class="text-center">
                         <button onclick="navigateTo('brain')" class="border-2 border-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
@@ -565,12 +570,17 @@
                 <div class="border-2 border-black p-8">
                     <h4 class="text-2xl serif-font mb-6 font-bold">High-Risk Groups</h4>
                     <p class="mb-6 text-base leading-relaxed">
-                        Students aged 15-17 show the highest distress levels (21%). Students with special needs, particularly ASD, face compounded challenges.
+                        Adolescents aged 15-17 report the highest distress levels (21%) during routine separations. Students with special educational needs, especially ASD and ADHD, face significantly compounded vulnerabilities.
                     </p>
-                    <div class="border-2 border-black p-4 bg-gray-50">
-                        <p class="text-sm font-bold">
-                            Ages 15-17: Peak vulnerability period during secondary years
-                        </p>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="border-2 border-black p-4 bg-orange-50">
+                            <p class="text-sm font-bold mb-2">For Students with ASD:</p>
+                            <p class="text-xs">Predictable routines are disrupted, causing anxiety and sensory overload in dual-household environments.</p>
+                        </div>
+                        <div class="border-2 border-black p-4 bg-red-50">
+                            <p class="text-sm font-bold mb-2">Critical Barrier:</p>
+                            <p class="text-xs">Communication breakdown creates systemic barriers to essential support services like IEPs and medication adjustments.</p>
+                        </div>
                     </div>
                     <div class="mt-8">
                         <button onclick="navigateTo('vulnerability')" class="border-2 border-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
@@ -606,24 +616,7 @@
                     </div>
                 </div>
 
-                <!-- Legal Overview -->
-                <div class="border-2 border-black p-8">
-                    <h4 class="text-2xl serif-font mb-6 font-bold">Legal Considerations</h4>
-                    <p class="mb-6 text-base leading-relaxed">
-                        Navigate complex family law situations while maintaining professional boundaries and student wellbeing.
-                    </p>
-                    <ul class="text-sm space-y-3 mb-6 list-disc list-inside">
-                        <li>Understanding AVOs and court orders</li>
-                        <li>Managing communication with separated parents</li>
-                        <li>Confidentiality and information sharing</li>
-                    </ul>
-                    <div class="mt-8">
-                        <button onclick="navigateTo('legal')" class="border-2 border-black px-6 py-3 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
-                            Review legal guidelines →
-                        </button>
-                    </div>
-                </div>
-
+    
                 <!-- Resources Overview -->
                 <div class="text-center py-8 border-2 border-black">
                     <h4 class="text-2xl serif-font mb-6 font-bold">Additional Resources</h4>
@@ -636,6 +629,24 @@
                 </div>
             </div>
 
+                <!-- Why This Matters -->
+                <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 border-2 border-black">
+                    <h4 class="text-2xl serif-font mb-6 text-center font-bold">Why This Matters</h4>
+                    <div class="max-w-3xl mx-auto">
+                        <p class="text-base leading-relaxed mb-6">
+                            Without intervention, these cognitive challenges can lead to <strong>academic failure, higher risk of early school leaving, and long-term educational disadvantage</strong>.
+                        </p>
+                        <div class="bg-white p-6 border-l-4 border-yellow-400 mb-6">
+                            <p class="text-sm">
+                                <strong>The Educator's Role:</strong> Your understanding of these neurobiological realities transforms how you interpret behavior—seeing signs of trauma rather than disengagement, and providing the right support at the right time.
+                            </p>
+                        </div>
+                        <p class="text-center font-semibold">
+                            Every intervention matters—your classroom can be the safe space that makes the difference.
+                        </p>
+                    </div>
+                </div>
+
             <div class="mt-16 pt-8 border-t-2 border-black text-center">
                 <button onclick="navigateTo('prevalence')" class="group border-2 border-black px-8 py-4 font-bold uppercase tracking-wider hover:bg-black hover:text-white transition">
                     Start Reading: Prevalence <span class="inline-block ml-2">→</span>
@@ -645,84 +656,99 @@
 
         <!-- PAGE 2: PREVALENCE -->
         <section id="prevalence" class="page-section hidden fade-in">
-            <h2 class="text-3xl serif-font mb-2">Background & Prevalence</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Understanding Family Breakdown in Australian Schools</p>
+            <h2 class="text-3xl serif-font mb-2">Prevalence in Australia</h2>
+            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Family Breakdown Statistics</p>
 
             <!-- Statistics Section -->
             <div class="mb-12">
-                <h3 class="text-2xl serif-font mb-8">The Reality Behind the Data: Scale in Australia</h3>
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
+                <h3 class="text-2xl serif-font mb-8">The Australian Bureau of Statistics (2024) Reports</h3>
+
+                <!-- Key Statistics Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
                     <div class="bg-gray-50 p-6 rounded-lg text-center">
                         <div class="text-5xl serif-font font-bold mb-2">47,216</div>
                         <p class="text-sm uppercase tracking-wide text-gray-600">Divorces granted in 2024</p>
-                        <p class="text-xs text-gray-500 mt-2">(Australian Bureau of Statistics, 2024)</p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Australian Bureau of Statistics</a></p>
                     </div>
                     <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="text-5xl serif-font font-bold mb-2">47%</div>
+                        <div class="text-5xl serif-font font-bold mb-2">2.1</div>
+                        <p class="text-sm uppercase tracking-wide text-gray-600">Per 1,000 residents</p>
+                        <p class="text-xs text-gray-500 mt-2">Divorce rate</p>
+                    </div>
+                    <div class="bg-gray-50 p-6 rounded-lg text-center">
+                        <div class="text-4xl serif-font font-bold mb-2">47%</div>
                         <p class="text-sm uppercase tracking-wide text-gray-600">Involve children under 18</p>
-                        <p class="text-xs text-gray-500 mt-2">(Australian Bureau of Statistics, 2024)</p>
-                    </div>
-                    <div class="bg-gray-50 p-6 rounded-lg text-center">
-                        <div class="text-4xl serif-font font-bold mb-2">2.1</div>
-                        <p class="text-sm uppercase tracking-wide text-gray-600">per 1,000 residents</p>
-                        <p class="text-xs text-gray-500 mt-2">Crude divorce rate (ABS, 2024)</p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://aifs.gov.au/research/facts-and-figures/divorces-australia-2024" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Australian Institute of Family Studies</a></p>
                     </div>
                 </div>
-                <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-black-300">
-                    <p class="text-sm text-gray-700">
-                        <strong>Trend:</strong> This represents a decrease from 48,700 divorces in 2023 <span class="text-gray-500">(Australian Bureau of Statistics, 2024)</span>.
+
+                <!-- Text Content from Report -->
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        The Australian Bureau of Statistics (2024) reports that 47,216 divorces were granted in 2024, with a divorce rate of 2.1 per 1,000 residents.
+                    </p>
+                    <p class="text-gray-700">
+                        Although this number is slightly lower than the 48,700 divorces recorded in 2023, the impact on school-aged children remains significant.
                     </p>
                 </div>
+
+                <!-- Hidden Scale Section -->
                 <div class="bg-blue-50 p-6 rounded-lg">
                     <h4 class="font-bold mb-4 flex items-center gap-2">
                         <i data-lucide="info" class="w-5 h-5 text-blue-600"></i>
-                        The Hidden Scale
+                        The True Scale of Family Breakdown
                     </h4>
-                    <p class="text-gray-700 mb-4">
-                        Official divorce statistics significantly underestimate the reality. When considering all forms of relationship breakdown, including the dissolution of de facto and unregistered relationships:
-                    </p>
-                    <div class="bg-white p-4 rounded border border-blue-200 text-center">
-                        <span class="text-3xl font-bold text-blue-700">1 in 5</span>
-                        <p class="text-gray-700 mt-2">Children experience parental separation before age 18</p>
-                        <p class="text-xs text-gray-500">This figure accounts for de facto dissolutions not captured in divorce data <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></p>
-                        <p class="text-xs text-gray-500 mt-1">Base statistic: <span class="text-gray-500">(Halford, 2018, as cited in Podwinski & Laletas, 2025)</span></p>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            For the education sector, around 47% of these divorces involved children under 18.
+                        </p>
+                        <p class="text-gray-700">
+                            However, the divorce statistics underestimates the true scale of family breakdown within school communities.
+                        </p>
+                        <div class="bg-white p-4 rounded border border-blue-200 text-center">
+                            <span class="text-3xl font-bold text-blue-700">One in five</span>
+                            <p class="text-gray-700 mt-2">Children are impacted by parental separation before the age of 18</p>
+                            <p class="text-xs text-gray-500 mt-2">When the dissolution of de facto and unregistered relationships is considered</p>
+                            <p class="text-xs text-gray-500 mt-1">Source: <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a></p>
+                        </div>
                     </div>
                 </div>
             </div>
 
             <!-- Timeline Section -->
             <div class="mb-12">
-                <h3 class="text-2xl serif-font mb-8">Why Secondary School Matters</h3>
-                <p class="text-gray-700 mb-6">
-                    The timeline dimension is crucial for secondary educators. The stress doesn't begin with the divorce decree nor end there—it spans years of uncertainty.
-                </p>
+                <h3 class="text-2xl serif-font mb-8">Temporal Trends and Secondary Education</h3>
 
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        Furthermore, the temporal trends of separation are particularly relevant for secondary educators.
+                    </p>
+                    <p class="text-gray-700">
+                        While the median duration from marriage to divorce in Australia is 13.2 years, the median duration to final separation is shorter, at approximately 9 years.
+                    </p>
+                    <p class="text-gray-700">
+                        This indicates a gap of 3–4 years between the breakdown of the relationship and the legal finalisation of divorce.
+                    </p>
+                </div>
+
+                <!-- Timeline Visual -->
                 <div class="bg-gradient-to-r from-gray-50 to-gray-100 p-8 rounded-lg">
-                    <h4 class="font-bold mb-6 text-center">The Family Timeline</h4>
+                    <h4 class="font-bold mb-6 text-center">Separation Timeline</h4>
                     <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div class="bg-white p-6 rounded-lg">
-                            <p class="text-center text-4xl font-bold text-gray-800 mb-2">13.2</p>
-                            <p class="text-center text-sm font-semibold text-gray-700">Total Median Duration</p>
-                            <p class="text-center text-xs text-gray-500 mt-2">From marriage to final divorce <span class="text-gray-500">(ABS, 2024; AIFS, 2025)</span></p>
+                        <div class="bg-white p-6 rounded-lg text-center">
+                            <p class="text-4xl font-bold text-gray-800 mb-2">13.2</p>
+                            <p class="text-sm font-semibold text-gray-700">Years: Marriage to Divorce</p>
+                            <p class="text-xs text-gray-500 mt-2">Median duration</p>
                         </div>
-                        <div class="bg-white p-6 rounded-lg">
-                            <p class="text-center text-sm text-gray-600 mb-3">Breakdown:</p>
-                            <div class="space-y-2">
-                                <div class="flex justify-between items-center text-sm">
-                                    <span>Marriage → Separation</span>
-                                    <span class="font-bold">9.3 years</span>
-                                </div>
-                                <div class="flex justify-between items-center text-sm">
-                                    <span>Separation → Divorce</span>
-                                    <span class="font-bold">3.9 years</span>
-                                </div>
-                            </div>
-                            <p class="text-xs text-gray-500 mt-3">Median durations <span class="text-gray-500">(Australian Bureau of Statistics, 2024)</span></p>
+                        <div class="bg-white p-6 rounded-lg text-center">
+                            <p class="text-4xl font-bold text-gray-800 mb-2">9</p>
+                            <p class="text-sm font-semibold text-gray-700">Years: Marriage to Separation</p>
+                            <p class="text-xs text-gray-500 mt-2">Median duration</p>
                         </div>
                     </div>
                     <div class="bg-white p-4 rounded border-l-4 border-gray-800">
                         <p class="text-sm text-gray-700">
-                            <strong>Implication:</strong> This 3-4 year lag often covers the critical secondary school period (Years 7-10), when students are already navigating adolescence while their families are in high-conflict legal disputes (Australian Bureau of Statistics, 2024).
+                            <strong>Impact on Secondary Students:</strong> This 3–4 year gap means secondary students may be navigating the cumulative impact of a separation that occurred during their primary years, or the stress of legal proceedings finalising as they enter adolescence.
                         </p>
                     </div>
                 </div>
@@ -731,794 +757,525 @@
   
             <!-- Age Vulnerability -->
             <div class="mb-12">
-                <h3 class="text-2xl serif-font mb-8">Peak Vulnerability: Ages 15-17</h3>
-                <div class="bg-red-50 p-8 rounded-lg">
-                    <p class="text-gray-700 mb-6">
-                        Contrary to common assumptions, older adolescents show the highest distress levels during family breakdown:
+                <h3 class="text-2xl serif-font mb-8">The Age of Higher Vulnerability</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        This period also aligns with a time of higher neurobiological vulnerability.
                     </p>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-6 rounded">
-                            <div class="text-4xl font-bold text-red-600 mb-4">21%</div>
-                            <p class="text-sm text-gray-700 mb-2">Report high distress during routine separations</p>
-                            <p class="text-xs text-gray-500">(Australian Institute of Family Studies, 2020)</p>
-                        </div>
-                    </div>
-                    <p class="text-sm text-gray-700 mt-6 italic">
-                        This confirms that secondary school students face unique vulnerability during family breakdown, likely due to identity formation, peer relationship building, and increasing academic pressures occurring simultaneously with family instability.
+                    <p class="text-gray-700">
+                        Research shows that adolescents aged 15–17 have higher levels of distress during routine separation (21%) compared with younger groups, based on parent reports.
+                    </p>
+                    <p class="text-gray-700">
+                        Health professionals also report more concerns about the wellbeing of 15–17-year-olds than other children.
+                    </p>
+                    <p class="text-gray-700">
+                        Because of this, secondary schools become an important place where the complex impacts of family breakdown appear.
                     </p>
                 </div>
+
+                <!-- Key Statistics Highlight -->
+                <div class="bg-red-50 p-8 rounded-lg">
+                    <div class="bg-white p-6 rounded border border-red-200 text-center">
+                        <span class="text-4xl font-bold text-red-600">21%</span>
+                        <p class="text-gray-700 mt-2">Adolescents aged 15–17 report high distress during routine separation</p>
+                        <p class="text-xs text-gray-500 mt-2">Based on parent reports</p>
+                        <p class="text-xs text-gray-500 mt-1">Source: <a href="https://aifs.gov.au/research/research-snapshots/child-wellbeing-after-parental-separation" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Australian Institute of Family Studies, 2020</a></p>
+                    </div>
+                </div>
             </div>
-        </section>
+
+            </section>
 
         <!-- PAGE 3: IDENTIFICATION -->
         <section id="identification" class="page-section hidden fade-in">
-            <h2 class="text-3xl serif-font mb-2">The Signals</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Identifying Adolescents in Crisis</p>
+            <h2 class="text-3xl serif-font mb-2">Characteristics and Indicators</h2>
+            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">of Adversity</p>
 
-  
+            <!-- Introduction -->
+            <div class="mb-12">
+                <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+                    <p class="text-gray-700">
+                        Identifying students who are experiencing family breakdown can be difficult for teachers because the signs of distress often look similar to normal adolescent behaviour.
+                    </p>
+                </div>
+            </div>
+
             <!-- School Refusal Section -->
             <div class="mb-12">
                 <h3 class="text-2xl serif-font mb-8">School Refusal</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        However, some indicators appear more clearly in secondary schools, especially school refusal.
+                    </p>
+                    <p class="text-gray-700">
+                        School refusal is different from truancy.
+                    </p>
+                </div>
+
                 <div class="bg-gray-50 p-8 rounded-lg">
-                    <h4 class="font-bold mb-4">Defining School Refusal vs. Truancy</h4>
-                    <p class="text-gray-700 mb-4">
-                        <strong>School refusal</strong> is characterized by severe emotional distress at the prospect of attending school, fundamentally different from truancy (Clark, 2022).
-                    </p>
-
-                    <div class="overflow-x-auto mb-6">
-                        <table class="w-full custom-table text-sm bg-white">
-                            <thead>
-                                <tr class="bg-gray-100">
-                                    <th class="w-1/4">Feature</th>
-                                    <th class="w-1/3">School Refusal (Distress Signal)</th>
-                                    <th class="w-1/3">Truancy (Conduct Issue)</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="font-bold text-gray-700">Root Cause</td>
-                                    <td>Severe emotional distress / Anxiety (Clark, 2022)</td>
-                                    <td>Lack of interest / Conduct disorder</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700">Parental Knowledge</td>
-                                    <td>Parents know and try to enforce attendance (Clark, 2022)</td>
-                                    <td>Parents unaware; absences concealed</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700">Student Mindset</td>
-                                    <td>Wants to attend but lacks emotional capacity (Clark, 2022)</td>
-                                    <td>Chooses not to attend</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700">Link to Breakdown</td>
-                                    <td>Strongly linked to separation anxiety (Clark, 2022)</td>
-                                    <td>Linked to peer influence/disengagement</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                    <h4 class="font-bold mb-4">Understanding the Difference</h4>
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div class="bg-blue-50 p-6 rounded-lg">
+                            <h5 class="font-bold text-blue-800 mb-3">School Refusal</h5>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• Involves strong emotional distress about going to school</li>
+                                <li>• Parents know about the absence</li>
+                                <li>• Parents have tried to help the student attend</li>
+                                <li>• Separation and divorce are important contributing factors</li>
+                            </ul>
+                        </div>
+                        <div class="bg-red-50 p-6 rounded-lg">
+                            <h5 class="font-bold text-red-800 mb-3">Truancy</h5>
+                            <ul class="space-y-2 text-sm text-gray-700">
+                                <li>• Usually involves hiding absences from parents</li>
+                                <li>• Parents are unaware of the absences</li>
+                                <li>• No strong emotional distress about attending school</li>
+                            </ul>
+                        </div>
                     </div>
-                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-black-300 mt-6">
+                    <div class="bg-white p-4 rounded border border-blue-200 mt-6">
                         <p class="text-sm text-gray-700">
-                            <strong>Key Distinction:</strong> Unlike truancy, in cases of school refusal, parents are typically aware of the absence and have attempted to secure the child's attendance <span class="text-gray-500">(Clark, 2022)</span>.
+                            <strong>Key Point:</strong> Separation and divorce are important contributing factors to school refusal behaviour.
                         </p>
-                    </div>
-                    <br>
-                    <!-- The Continuum -->
-                    <h5 class="font-bold mb-4">The Continuum of Refusal Behaviors</h5>
-                    <div class="grid md:grid-cols-4 gap-4">
-                        <div class="bg-white p-4 rounded border border-gray-200">
-                            <div class="text-xs text-purple-600 font-semibold mb-2">MILD</div>
-                            <p class="text-xs text-gray-700">Attends with significant distress, pleads to stay home</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-gray-200">
-                            <div class="text-xs text-orange-600 font-semibold mb-2">PERIODIC</div>
-                            <p class="text-xs text-gray-700">Morning misbehavior, psychosomatic complaints</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-gray-200">
-                            <div class="text-xs text-red-600 font-semibold mb-2">MODERATE</div>
-                            <p class="text-xs text-gray-700">Misses specific classes or days repeatedly</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-gray-200">
-                            <div class="text-xs text-gray-900 font-semibold mb-2">SEVERE</div>
-                            <p class="text-xs text-gray-700">Absent for extended periods (weeks/months)</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-3 italic">Early identification is critical - longer absences increase dropout risk <span class="text-gray-500">(Clark, 2022)</span></p>
-                </div>
-            </div>
-
-            <!-- Academic & Cognitive Indicators -->
-            <div class="mb-12">
-                <h3 class="text-2xl serif-font mb-8">Academic & Cognitive Indicators</h3>
-                <div class="grid md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Missed Deadlines</h4>
-                        <i data-lucide="calendar-x" class="w-8 h-8 mx-auto mb-4 text-red-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Students "get really stressed" about deadlines due to logistical chaos of living between houses (Podwinski & Laletas, 2025)
-                        </p>
-                    </div>
-                    <div class="bg-black-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Focus Issues</h4>
-                        <i data-lucide="eye-off" class="w-8 h-8 mx-auto mb-4 text-yellow-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            "Struggle to concentrate" - cognitive resources diverted to emotional regulation (Turpyn et al., 2017)
-                        </p>
-                    </div>
-                    <div class="bg-blue-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Declining Grades</h4>
-                        <i data-lucide="trending-down" class="w-8 h-8 mx-auto mb-4 text-blue-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Noticeable "marks drop" despite efforts to keep up (Podwinski & Laletas, 2025)
-                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2022-23/SchoolRefusal" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Clark, 2023</a></p>
                     </div>
                 </div>
 
-                <!-- Communication Uncertainty -->
-                <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-black-400 mb-6">
-                    <h5 class="font-bold mb-4 flex items-center gap-2">
-                        <i data-lucide="message-circle-x" class="w-5 h-5 text-purple-600"></i>
-                        Signal: Communication Uncertainty
-                    </h5>
-                    <p class="text-sm text-gray-700 mb-4">
-                        Teachers may observe confusion regarding decision-making authority, indicating high-conflict co-parenting dynamics:
+                <!-- Two-Household Challenge -->
+                <div class="mt-8 bg-orange-50 p-6 rounded-lg">
+                    <h4 class="font-bold mb-4">The Two-Household Challenge</h4>
+                    <p class="text-gray-700">
+                        This problem can become worse when students have to move between two households.
                     </p>
-                    <ul class="text-sm text-gray-700 space-y-2">
-                        <li>• <strong>Permission Slips:</strong> Delayed responses due to parental disagreement on activities</li>
-                        <li>• <strong>Medical Decisions:</strong> Uncertainty about consent for health services</li>
-                        <li>• <strong>Information Sharing:</strong> Questions about which parent receives academic reports</li>
-                    </ul>
-                    <p class="text-xs text-gray-500 mt-3">Source: Podwinski & Laletas, 2025</p>
+                    <p class="text-gray-700">
+                        The logistics and emotional challenges can disturb the stability they need for regular attendance.
+                    </p>
+                    <p class="text-xs text-gray-500 mt-2">Source: <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a></p>
                 </div>
-
             </div>
 
-            <!-- Emotional Expression -->
+            <!-- Behavioral Changes in Classroom -->
             <div class="mb-12">
-                <h3 class="text-2xl serif-font mb-8">Emotional Expression</h3>
-                <div class="grid md:grid-cols-2 gap-6">
+                <h3 class="text-2xl serif-font mb-8">Behavioral Changes in the Classroom</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        In the classroom, high-conflict divorce often shows clear changes in student behaviour.
+                    </p>
+                </div>
+
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <!-- Internalising Behaviors -->
                     <div class="bg-blue-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="arrow-down-right" class="w-5 h-5 text-blue-600"></i>
-                            Internalizing Behaviors
-                        </h4>
-                        <p class="text-sm text-gray-700 mb-4">Easily overlooked but signal profound distress:</p>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Transition Anxiety:</strong> 21% of ages 15-17 show distress during routine separations (AIFS, 2020)</li>
-                            <li>• <strong>Friday Phenomenon:</strong> Heightened anxiety before custody transfers (Podwinski & Laletas, 2025)</li>
-                            <li>• <strong>Somatic Complaints:</strong> Stomach aches, headaches before school</li>
+                        <h4 class="font-bold text-lg mb-4 text-blue-800">Internalising Behaviors</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Students who were once engaged becoming withdrawn</li>
+                            <li>• May miss assessment deadlines</li>
+                            <li>• Show poor concentration</li>
+                            <li>• High anxiety, especially on days when custody changes happen</li>
                         </ul>
+                        <div class="bg-white p-3 rounded mt-4">
+                            <p class="text-xs text-gray-600 italic">
+                                "All-encompassing underlying stress" from home
+                            </p>
+                        </div>
                     </div>
+
+                    <!-- Externalising Behaviors -->
                     <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="arrow-up-right" class="w-5 h-5 text-red-600"></i>
-                            Externalizing Behaviors
-                        </h4>
-                        <p class="text-sm text-gray-700 mb-4">More disruptive but equally desperate cries for help:</p>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Aggression/Defiance:</strong> Students may "exhibit some of the same behaviours as violent parents" (Podwinski & Laletas, 2025)</li>
-                            <li>• <strong>Social Friction:</strong> Both patterns damage peer relationships, increasing isolation</li>
+                        <h4 class="font-bold text-lg mb-4 text-red-800">Externalising Behaviors</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Some students may show behaviours like defiance</li>
+                            <li>• Others show aggression</li>
+                            <li>• Reflecting the conflict they see at home</li>
                         </ul>
                     </div>
                 </div>
 
+                <div class="bg-gray-100 p-6 rounded-lg">
+                    <p class="text-sm text-gray-600 text-center">
+                        Source: <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a>
+                    </p>
+                </div>
             </div>
 
+  
         </section>
 
         <!-- PAGE 4: NEUROBIOLOGY -->
         <section id="brain" class="page-section hidden fade-in">
             <h2 class="text-3xl serif-font mb-2">Impact on Development, Learning, and Neurobiology</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">How Family Breakdown Reshapes the Adolescent Brain</p>
+            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">How Family Breakdown Affects Adolescent Development</p>
 
-            <!-- Adolescent Brain Development Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">Adolescent Brain Development</h3>
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <h4 class="font-bold mb-4">The Critical Period of Neuroplasticity</h4>
-                    <p class="text-gray-700 mb-4">
-                        Adolescence is a critical period of high plasticity—the brain's ability to reshape itself in response to environmental influences such as parenting <span class="text-gray-500">(Orygen, 2025)</span>.
+            <!-- Introduction -->
+            <div class="mb-12">
+                <div class="space-y-6">
+                    <p class="text-gray-700">
+                        The impact of family breakdown on adolescents goes beyond immediate behaviours. It can fundamentally alter neurobiological development and cognitive functioning.
                     </p>
+                    <p class="text-gray-700">
+                        Adolescence is a critical period of neuroplasticity where the brain is highly sensitive to environmental influences such as parenting.
+                    </p>
+                    <p class="text-gray-700">
+                        However, this period is also characterised by significant structural remodeling, specifically an imbalance between the developing limbic system and the still-maturing prefrontal cortex.
+                    </p>
+                </div>
+            </div>
 
-                    <div class="overflow-x-auto mb-6">
-                        <table class="w-full custom-table text-sm bg-white">
-                            <thead>
-                                <tr class="bg-gray-100">
-                                    <th class="w-1/3">Brain Region</th>
-                                    <th class="w-1/3">Development Status</th>
-                                    <th class="w-1/3">Impact of Family Conflict</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="brain" class="w-4 h-4 inline mr-2"></i>Limbic System</td>
-                                    <td>Develops early (emotion, threat detection)</td>
-                                    <td class="text-red-600">Becomes overactive, hyper-responsive to threats</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="cpu" class="w-4 h-4 inline mr-2"></i>Prefrontal Cortex</td>
-                                    <td>Still maturing (executive functions)</td>
-                                    <td class="text-red-600">Disrupted, impairing planning and regulation</td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="activity" class="w-4 h-4 inline mr-2"></i>Stress Response</td>
-                                    <td>Developing resilience</td>
-                                    <td class="text-red-600">Sustained cortisol secretion</td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                    <div class="bg-blue-50 p-4 rounded-lg border-l-4 border-black mt-6">
-                        <p class="text-sm text-gray-700">
-                            <strong>Key Imbalance:</strong> This developmental gap creates heightened emotional sensitivity with still-developing regulation capacity <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
+            <!-- Stress Response Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">The Neurological Impact of Stress</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        This neurological state makes students acutely sensitive to environmental stressors.
+                    </p>
+                    <p class="text-gray-700">
+                        Evidence suggests that the adolescent stress-response involves an increased secretion of cortisol, and prolonged exposure to family conflict can lead to sustained cortisol secretion, which is a neurobiological marker for depression and other psychological dysfunctions.
+                    </p>
+                </div>
+
+                <div class="bg-red-50 p-8 rounded-lg">
+                    <h4 class="font-bold mb-4">Consequences for Executive Function</h4>
+                    <div class="bg-white p-6 rounded border border-red-200">
+                        <p class="text-gray-700 mb-4">
+                            Consequently, chronic adversity can disrupt the prefrontal cortex—the area controlling executive functions such as impulse control, planning, and emotional regulation which reduces a student's capacity to engage academically.
                         </p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a></p>
                     </div>
                 </div>
             </div>
 
-            <!-- Cortisol Impact Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">Cortisol Impact on Learning</h3>
-                <div class="grid md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Stress Hormone Release</h4>
-                        <i data-lucide="droplets" class="w-8 h-8 mx-auto mb-4 text-red-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Family conflict triggers sustained cortisol secretion, a neurobiological marker for depression <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>
-                        </p>
-                    </div>
-                    <div class="bg-yellow-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Executive Function Disruption</h4>
-                        <i data-lucide="zap-off" class="w-8 h-8 mx-auto mb-4 text-yellow-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Chronic cortisol impairs impulse control, planning, and emotional regulation capacity
-                        </p>
-                    </div>
-                    <div class="bg-blue-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Academic Capacity Reduced</h4>
-                        <i data-lucide="trending-down" class="w-8 h-8 mx-auto mb-4 text-blue-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Students struggle to engage academically despite motivation or ability
-                        </p>
-                    </div>
-                </div>
-            </div>
+            <!-- Parent-Child Brain Connection -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Parent-Child Brain Connection</h3>
 
-            <!-- Neural Coupling Section -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">Neural Coupling: Parent-Child Brain Connection</h3>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="radar" class="w-5 h-5 text-red-600"></i>
-                            Amygdala Hyperactivation
-                        </h4>
-                        <p class="text-sm text-gray-700 mb-4">The brain's threat detection center becomes overactive:</p>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Parental Negative Emotion:</strong> Direct correlation to adolescent amygdala response <span class="text-gray-500">(Turpyn et al., 2017)</span></li>
-                            <li>• <strong>Threat Sensitivity:</strong> Brain becomes "wired" to overreact to negativity</li>
-                            <li>• <strong>Hypervigilance:</strong> Constant state of alertness to emotional danger</li>
-                        </ul>
-                    </div>
-                    <div class="bg-blue-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="battery-charging" class="w-5 h-5 text-blue-600"></i>
-                            vmPFC Overload
-                        </h4>
-                        <p class="text-sm text-gray-700 mb-4">Regulatory resources become exhausted:</p>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Resource Depletion:</strong> Over-engagement to manage intense emotional arousal <span class="text-gray-500">(Turpyn et al., 2017)</span></li>
-                            <li>• <strong>Regulatory Exhaustion:</strong> Fewer cognitive resources available for learning</li>
-                            <li>• <strong>Biological Priming:</strong> Adolescent remains "primed" to detect threats</li>
-                        </ul>
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        There is a clear link between parents' emotional states and adolescents' brain responses.
+                    </p>
+                    <p class="text-gray-700">
+                        Turpyn et al. (2017) found that higher levels of parental negative emotion are linked to increased activation of the adolescent amygdala, the brain's threat detection centre, when adolescents are exposed to negative stimuli.
+                    </p>
+                </div>
+
+                <!-- Amygdala Response -->
+                <div class="bg-red-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4 flex items-center gap-2">
+                        <i data-lucide="brain" class="w-5 h-5 text-red-600"></i>
+                        Amygdala Activation
+                    </h4>
+                    <div class="bg-white p-4 rounded border border-red-200">
+                        <p class="text-gray-700">
+                            Higher levels of parental negative emotion are linked to increased activation of the adolescent amygdala, the brain's threat detection centre, when adolescents are exposed to negative stimuli.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://doi.org/10.1111/sode.12263" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Turpyn et al., 2017</a></p>
                     </div>
                 </div>
 
-                <!-- Critical Discovery Box -->
-                <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-black-500 mt-6">
-                    <h5 class="font-bold mb-4 flex items-center gap-2">
+                <!-- Regulatory Resources -->
+                <div class="bg-blue-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4">The Role of Parental Emotion Regulation</h4>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            Importantly, this effect depends on how well parents regulate their own emotions.
+                        </p>
+                        <p class="text-gray-700">
+                            When parents struggle with emotion regulation, adolescents show increased activity not only in the amygdala but also in the ventromedial prefrontal cortex (vmPFC).
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Key Insight -->
+                <div class="bg-purple-50 p-6 rounded-lg border-l-4 border-purple-400">
+                    <h4 class="font-bold mb-4 flex items-center gap-2">
                         <i data-lucide="lightbulb" class="w-5 h-5 text-purple-600"></i>
                         Not Unregulated, Over-Engaged
-                    </h5>
-                    <p class="text-sm text-gray-700 mb-4">
-                        This higher vmPFC activity does not indicate adolescents are unregulated; rather, it reflects over-engagement of regulatory resources as they attempt to manage intense emotional arousal <span class="text-gray-500">(Turpyn et al., 2017)</span>.
-                    </p>
-                    <div class="bg-white p-4 rounded border border-purple-200">
-                        <p class="text-xs text-center italic">
-                            The adolescent brain is deploying significant regulatory resources just to function, leaving reduced capacity for academic learning <span class="text-gray-500">(Orygen, 2025; Turpyn et al., 2017)</span>
+                    </h4>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            This higher vmPFC activity does not mean adolescents are unregulated; instead, it reflects over-engagement of regulatory resources as they try to manage intense emotional arousal.
                         </p>
+                        <p class="text-gray-700">
+                            Over time, this constant neural effort can exhaust their regulatory capacity, leaving adolescents biologically "primed" to detect threats and reducing the cognitive resources available for learning.
+                        </p>
+                        <p class="text-xs text-gray-500">Source: <a href="https://doi.org/10.1111/sode.12263" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Turpyn et al., 2017</a></p>
                     </div>
                 </div>
             </div>
 
             <!-- Educational Consequences -->
-            <div class="mb-16">
+            <div class="mb-12">
                 <h3 class="text-2xl serif-font mb-8">Educational Consequences</h3>
 
-                <!-- Communication Uncertainty Analogy -->
-                <div class="bg-black-50 p-6 rounded-lg border-l-4 border-black mb-6">
-                    <h5 class="font-bold mb-4 flex items-center gap-2">
-                        <i data-lucide="message-circle-x" class="w-5 h-5 text-amber-600"></i>
-                        Educational Misinterpretation: Behavior vs Biology
-                    </h5>
-                    <p class="text-sm text-gray-700 mb-4">
-                        Deficits in executive function caused by family stress are often misunderstood by educators:
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        This neurobiological change affects educational outcomes.
                     </p>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-4 rounded border border-black-200">
-                            <h6 class="font-bold text-sm mb-3 text-red-600">What It Looks Like:</h6>
-                            <ul class="text-xs text-gray-700 space-y-2">
-                                <li>• Appears as lack of motivation</li>
-                                <li>• Seems like poor ability or attitude</li>
-                                <li>• Manifests as discipline problems</li>
-                                <li>• Presents as academic disengagement</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-black-200">
-                            <h6 class="font-bold text-sm mb-3 text-green-600">What It Actually Is:</h6>
-                            <ul class="text-xs text-gray-700 space-y-2">
-                                <li>• Physiological response to trauma</li>
-                                <li>• Resource depletion from stress management</li>
-                                <li>• Executive function impairment</li>
-                                <li>• Cortisol-induced cognitive disruption</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Long-term Impact -->
-                <div class="border-t-4 border-b-4 border-black py-8 text-center bg-gray-50 mt-8">
-                    <h4 class="text-xl font-bold mb-4">Long-term Educational Impact</h4>
-                    <div class="grid md:grid-cols-3 gap-6 max-w-3xl mx-auto">
-                        <div class="bg-white p-4 rounded border-2 border-black">
-                            <i data-lucide="alert-triangle" class="w-8 h-8 mx-auto mb-2 text-red-600"></i>
-                            <p class="text-sm font-bold">Academic Failure</p>
-                            <p class="text-xs mt-1">Increased risk of falling behind</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border-2 border-black">
-                            <i data-lucide="door-open" class="w-8 h-8 mx-auto mb-2 text-orange-600"></i>
-                            <p class="text-sm font-bold">Early School Leaving</p>
-                            <p class="text-xs mt-1">Higher dropout risk</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border-2 border-black">
-                            <i data-lucide="trending-down" class="w-8 h-8 mx-auto mb-2 text-gray-600"></i>
-                            <p class="text-sm font-bold">Long-term Disadvantage</p>
-                            <p class="text-xs mt-1">Educational and career impacts</p>
-                        </div>
-                    </div>
-                    <p class="text-xs text-gray-500 mt-6 italic">Without proper intervention, these cognitive challenges can create lasting educational disadvantage <span class="text-gray-500">(Clark, 2022)</span>.</p>
-                </div>
-            </div>
-
-            
-            </section>
-
-        <!-- PAGE 5: VULNERABILITY -->
-        <section id="vulnerability" class="page-section hidden fade-in">
-            <h2 class="text-3xl serif-font mb-2">The Double Burden</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Supporting High-Risk and Vulnerable Students</p>
-
-            <!-- Introduction -->
-            <div class="mb-16">
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <p class="text-lg leading-relaxed mb-6">
-                        While family breakdown affects all students, certain groups face <strong>compounded vulnerabilities</strong>. For these students, the stress of family transition intersects with existing developmental challenges or exposure to trauma, significantly heightening the risk of academic disengagement and developmental regression <span class="text-gray-500">(Australian Institute of Family Studies [AIFS], 2020)</span>.
+                    <p class="text-gray-700">
+                        The mental effort needed to manage this heightened arousal uses resources required for complex academic tasks.
                     </p>
                 </div>
-            </div>
 
-            <!-- Section 1: Special Educational Needs -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">Enhanced Vulnerability: Students with Special Educational Needs (SEN)</h3>
-
-                <!-- SEN Statistics -->
-                <div class="grid md:grid-cols-2 gap-4 mb-8">
-                    <div class="bg-purple-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Higher Risk Group</h4>
-                        <i data-lucide="users" class="w-8 h-8 mx-auto mb-4 text-purple-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            The negative effects of family breakdown are notably more significant for students with <strong>ASD/ADHD</strong>. These students face a significantly higher risk of school refusal and disengagement following family disruption <span class="text-gray-500">(Clark, 2022)</span>.
+                <!-- Critical Misunderstanding -->
+                <div class="bg-yellow-50 p-8 rounded-lg border-l-4 border-yellow-400">
+                    <h4 class="font-bold mb-4">A Critical Misunderstanding</h4>
+                    <div class="bg-white p-6 rounded border border-yellow-200">
+                        <p class="text-gray-700 mb-4">
+                            Therefore, deficits in executive function caused by family stress can be misunderstood by educators as lack of motivation or ability, instead of a physiological response to trauma.
                         </p>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Compounded Challenges</h4>
-                        <i data-lucide="alert-triangle" class="w-8 h-8 mx-auto mb-4 text-orange-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            These students face significantly higher risk compared to their neurotypical peers <span class="text-gray-500">(Clark, 2022)</span>.
+                        <p class="text-gray-700">
+                            Without proper intervention, these cognitive challenges can lead to academic failure, higher risk of early school leaving, and long-term educational disadvantage.
                         </p>
-                    </div>
-                </div>
-
-                <!-- Routine Disruption Table -->
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <h4 class="font-bold mb-4">The Disruption of Routine</h4>
-                    <p class="text-gray-700 mb-4">
-                        For students with ASD, maintaining predictable routines is critical for emotional regulation. Parental separation inherently dismantles this structure by introducing household changes and unpredictable schedules <span class="text-gray-500">(Hetherington, 2017)</span>.
-                    </p>
-
-                    <div class="overflow-x-auto mb-6">
-                        <table class="w-full custom-table text-sm bg-white">
-                            <thead>
-                                <tr class="bg-gray-100">
-                                    <th class="w-1/3">Challenge</th>
-                                    <th class="w-1/3">What Happens</th>
-                                    <th class="w-1/3">Impact on Student</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="shuffle" class="w-4 h-4 inline mr-2"></i>Routine Destruction</td>
-                                    <td>Separation introduces instability and complexity</td>
-                                    <td class="text-red-600">Conflicts with student's need for order <span class="text-gray-500">(Hetherington, 2017)</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="home" class="w-4 h-4 inline mr-2"></i>Transition Burden</td>
-                                    <td>Living between two households creates inconsistency</td>
-                                    <td class="text-red-600">Triggers acute anxiety and sensory overload <span class="text-gray-500">(Hetherington, 2017)</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="clock" class="w-4 h-4 inline mr-2"></i>Logistical Anxiety</td>
-                                    <td>Unpredictable transitions and environments</td>
-                                    <td class="text-red-600">Students unexpectedly at "other parent's house" <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-
-                <!-- Functional Behaviors Continuum -->
-                <h5 class="font-bold mb-4">Interpreting Distress: Functional Behaviors</h5>
-                <p class="text-gray-700 mb-4">
-                    When faced with this disruption, students with ASD may exhibit specific behavioral changes. Educators must recognize these as functional coping mechanisms rather than simple misbehavior.
-                </p>
-                <div class="grid md:grid-cols-2 gap-6">
-                    <div class="bg-blue-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="arrow-down-right" class="w-5 h-5 text-blue-600"></i>
-                            What You Might See
-                        </h4>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Increased Stimming:</strong> More self-stimulatory behaviors as functional attempts to regulate emotion <span class="text-gray-500">(Hetherington, 2017)</span></li>
-                            <li>• <strong>Sensory Seeking:</strong> Heightened sensory input needs</li>
-                            <li>• <strong>Social Withdrawal:</strong> Retreat from interactions to manage sensory and emotional overload <span class="text-gray-500">(Hetherington, 2017)</span></li>
-                            <li>• <strong>Emotional Meltdowns:</strong> Intuitive reactions to chaos</li>
-                        </ul>
-                    </div>
-                    <div class="bg-green-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 flex items-center gap-2">
-                            <i data-lucide="lightbulb" class="w-5 h-5 text-green-600"></i>
-                            What It Actually Means
-                        </h4>
-                        <ul class="text-sm text-gray-700 space-y-3">
-                            <li>• <strong>Coping Mechanism:</strong> Functional emotional regulation</li>
-                            <li>• <strong>Self-Regulation:</strong> Attempts to manage overwhelming input</li>
-                            <li>• <strong>Protective Strategy:</strong> Shielding from chaos</li>
-                            <li>• <strong>Communication:</strong> Non-verbal expression of distress</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- Critical Insight -->
-                <div class="bg-amber-50 p-6 rounded-lg border-l-4 border-amber-500 mt-6">
-                    <h5 class="font-bold mb-4 flex items-center gap-2">
-                        <i data-lucide="alert-circle" class="w-5 h-5 text-amber-600"></i>
-                        Not Misbehavior, Coping
-                    </h5>
-                    <p class="text-sm text-gray-700">
-                        These behaviors serve a functional purpose—they help the student regulate emotion in the face of chaos. <strong>They should NOT be discouraged</strong> without first providing alternative strategies for emotional regulation <span class="text-gray-500">(Hetherington, 2017)</span>.
-                    </p>
-                </div>
-            </div>
-
-            <!-- Section 2: Communication Uncertainty -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">The Crisis of "Communication Uncertainty"</h3>
-
-                <!-- Communication System -->
-                <div class="grid md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-green-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Ideal System</h4>
-                        <i data-lucide="users-2" class="w-8 h-8 mx-auto mb-4 text-green-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Strong collaboration in <strong>"Communication between Parent-Teacher-Child"</strong> domain enables effective reasonable adjustments <span class="text-gray-500">(Page et al., 2024)</span>.
-                        </p>
-                    </div>
-                    <div class="bg-yellow-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Breakdown Point</h4>
-                        <i data-lucide="message-circle-x" class="w-8 h-8 mx-auto mb-4 text-yellow-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            <strong>High-Conflict Divorce (HCD)</strong> collapses essential communication, creating <strong>"communication uncertainty"</strong> <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
-                        </p>
-                    </div>
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Consequence</h4>
-                        <i data-lucide="shield-off" class="w-8 h-8 mx-auto mb-4 text-red-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Private dispute becomes <strong>systemic barrier</strong>, blocking access to fair education <span class="text-gray-500">(Page et al., 2024; Podwinski & Laletas, 2025)</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Decision Making Challenges -->
-                <div class="bg-purple-50 p-8 rounded-lg">
-                    <h4 class="font-bold mb-4">The Breakdown of Support</h4>
-                    <p class="text-gray-700 mb-6">
-                        In the context of High-Conflict Divorce (HCD), this essential communication often collapses, creating a systemic barrier known as "communication uncertainty" <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
-                    </p>
-
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-white p-4 rounded border border-purple-200">
-                            <h6 class="font-bold text-sm mb-3 text-red-600">Decision Paralysis</h6>
-                            <ul class="text-xs text-gray-700 space-y-2">
-                                <li>• <strong>IEP Approvals:</strong> Unclear authorization for Individualized Education Plans <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></li>
-                                <li>• <strong>Medical Interventions:</strong> Questions about consent for health services <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></li>
-                                <li>• <strong>Academic Reports:</strong> Confusion about which parent receives information</li>
-                                <li>• <strong>Excused Absences:</strong> Disputes over legitimate reasons for missed school</li>
-                            </ul>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-purple-200">
-                            <h6 class="font-bold text-sm mb-3 text-orange-600">Delayed Support</h6>
-                            <ul class="text-xs text-gray-700 space-y-2">
-                                <li>• <strong>Lost Services:</strong> Total loss of essential support services <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></li>
-                                <li>• <strong>Assessment Delays:</strong> Postponed evaluations and interventions</li>
-                                <li>• <strong>Funding Issues:</strong> Unclear responsibility for service costs</li>
-                                <li>• <strong>Implementation Gaps:</strong> Inconsistent application of accommodations</li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <div class="mt-6 bg-white p-4 rounded border-l-4 border-gray-800">
-                        <p class="text-sm text-gray-700">
-                            <strong>The Consequence:</strong> Failures in parental communication transform a private family dispute into a systemic barrier, actively hindering the student's access to fair education and academic success <span class="text-gray-500">(Page et al., 2024; Podwinski & Laletas, 2025)</span>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Section 3: Violence Impact -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">The Shadow of Violence</h3>
-                <p class="text-gray-700 mb-6">
-                    The risk of compromised wellbeing is significantly heightened when students are exposed to family violence or emotional abuse. This places the student in the highest risk category for developmental regression <span class="text-gray-500">(AIFS, 2020)</span>.
-                </p>
-
-                <!-- Violence Impact Statistics -->
-                <div class="grid md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-red-50 p-6 rounded-lg border-2 border-red-200">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-red-600 mb-2">63%</div>
-                            <p class="text-sm text-gray-700 font-semibold">Lower Child Wellbeing</p>
-                            <p class="text-xs text-gray-600 mt-2">Parents experiencing violence report lower overall child wellbeing and physical health compared to families with no violence <span class="text-gray-500">(AIFS, 2020)</span>.</p>
-                        </div>
-                    </div>
-                    <div class="bg-orange-50 p-6 rounded-lg border-2 border-orange-200">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-orange-600 mb-2">71%</div>
-                            <p class="text-sm text-gray-700 font-semibold">Children Affected</p>
-                            <p class="text-xs text-gray-600 mt-2">Parents report child has been affected by witnessing violence <span class="text-gray-500">(AIFS, 2020)</span>.</p>
-                        </div>
-                    </div>
-                    <div class="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
-                        <div class="text-center">
-                            <div class="text-3xl font-bold text-purple-600 mb-2">↓</div>
-                            <p class="text-sm text-gray-700 font-semibold">Academic Decline</p>
-                            <p class="text-xs text-gray-600 mt-2">Children exposed to violence fare worse in learning and school performance <span class="text-gray-500">(AIFS, 2020)</span>.</p>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Critical Timing Factor -->
-                <div class="bg-gray-50 p-8 rounded-lg">
-                    <h4 class="font-bold mb-4">Timing Factor</h4>
-                    <div class="bg-red-100 p-6 rounded border border-red-300 text-center">
-                        <p class="text-lg font-bold text-red-700 mb-2">Key Finding</p>
-                        <p class="text-sm text-gray-700">
-                            Children exposed to violence <strong>since separation</strong> (post-separation conflict) are reported to fare <strong>worse</strong> overall than those who were exposed only prior to or during the separation <span class="text-gray-500">(AIFS, 2020)</span>.
-                        </p>
-                        <p class="text-xs text-gray-600 mt-4 italic">
-                            Why? The ongoing instability and threat create a more sustained risk to the child's functioning than historical trauma alone <span class="text-gray-500">(AIFS, 2020)</span>.
-                        </p>
-                    </div>
-                </div>
-
-                <!-- Behavioral Manifestations -->
-                <div class="mt-8">
-                    <h5 class="font-bold mb-4">Behavioral Manifestations</h5>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <div class="bg-red-50 p-4 rounded border border-red-200">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i data-lucide="alert-triangle" class="w-4 h-4 text-red-600"></i>
-                                <h6 class="text-sm font-bold">Internalized Stress</h6>
-                            </div>
-                            <p class="text-xs text-gray-700">High levels of stress, anxiety, and fear <span class="text-gray-500">(AIFS, 2020)</span>.</p>
-                        </div>
-                        <div class="bg-orange-50 p-4 rounded border border-orange-200">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i data-lucide="users-x" class="w-4 h-4 text-orange-600"></i>
-                                <h6 class="text-sm font-bold">Social Difficulties</h6>
-                            </div>
-                            <p class="text-xs text-gray-700">Social difficulties and challenges in forming peer relationships <span class="text-gray-500">(AIFS, 2020)</span>.</p>
-                        </div>
-                        <div class="bg-purple-50 p-4 rounded border border-purple-200">
-                            <div class="flex items-center gap-2 mb-2">
-                                <i data-lucide="zap" class="w-4 h-4 text-purple-600"></i>
-                                <h6 class="text-sm font-bold">Externalized Behavior</h6>
-                            </div>
-                            <p class="text-xs text-gray-700">Aggression or violence, potentially mirroring conflict patterns observed at home <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.</p>
-                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2022-23/SchoolRefusal" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Clark, 2023</a></p>
                     </div>
                 </div>
             </div>
 
         </section>
 
-        <!-- PAGE 6: STRATEGIES -->
-        <section id="strategies" class="page-section hidden fade-in">
-            <h2 class="text-3xl serif-font mb-2">From Reaction to Resilience</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Whole-School & Classroom Strategies</p>
+        <!-- PAGE 5: VULNERABILITY -->
+        <section id="vulnerability" class="page-section hidden fade-in">
+            <h2 class="text-3xl serif-font mb-2">Impact on Students with Special Needs</h2>
+            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">ASD/ADHD</p>
 
-            <!-- The Imperative for a Trauma-Informed Framework -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">The Imperative for a Trauma-Informed Framework</h3>
-
-                <!-- Physiological Reality -->
-                <div class="bg-gray-50 p-8 rounded-lg mb-8">
-                    <h4 class="font-bold mb-4">The Physiological Reality</h4>
-                    <p class="text-gray-700 mb-4">
-                        For adolescents experiencing High-Conflict Divorce (HCD), the chronic stress—what teachers term an <strong>"all-encompassing underlying stress"</strong>—can lead to observable academic difficulties, including withdrawal, missed assessment deadlines, and poor concentration <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
+            <!-- Introduction -->
+            <div class="mb-12">
+                <div class="space-y-6">
+                    <p class="text-gray-700">
+                        The negative effects of family breakdown are more significant for students with special educational needs, especially those with Autism Spectrum Disorder (ASD) and Attention Deficit Hyperactivity Disorder (ADHD).
                     </p>
-                    <div class="bg-red-50 p-4 rounded-lg border-l-4 border-red-500">
-                        <p class="text-sm text-gray-700">
-                            The adolescent brain is perpetually <strong>"primed" to detect threats</strong>, consuming regulatory resources required for complex academic tasks <span class="text-gray-500">(Turpyn et al., 2017)</span>.
-                        </p>
-                    </div>
+                </div>
+            </div>
+
+            <!-- ASD Section -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Students with Autism Spectrum Disorder (ASD)</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        For students with ASD, having predictable routines is important for emotional regulation, but parental separation often brings changes in households and unpredictable schedules, disrupting these routines.
+                    </p>
+                    <p class="text-gray-700">
+                        As a result, students may show more self-stimulatory behaviours, sensory seeking, or withdrawal.
+                    </p>
                 </div>
 
-                <!-- Standard Approaches vs Reality -->
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Standard Approaches</h4>
-                        <i data-lucide="x-circle" class="w-8 h-8 mx-auto mb-4 text-red-600"></i>
-                        <p class="text-sm text-gray-700 text-center mb-4">
-                            Often fail these students because they interpret cognitive deficits as lack of motivation or ability, rather than a physiological response to trauma <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
+                <!-- Important Note -->
+                <div class="bg-yellow-50 p-6 rounded-lg border-l-4 border-yellow-400">
+                    <h4 class="font-bold mb-4">Important Understanding</h4>
+                    <div class="bg-white p-4 rounded border border-yellow-200">
+                        <p class="text-gray-700">
+                            Importantly, these behaviours are not just disruptive. They often help students cope with the disruption and should not be discouraged without first providing alternative ways to regulate emotions.
                         </p>
-                        <ul class="text-xs text-gray-700 space-y-2">
-                            <li>• Viewing behavior as "defiance"</li>
-                            <li>• Missing deadlines as "laziness"</li>
-                            <li>• Poor concentration as "disinterest"</li>
-                        </ul>
-                    </div>
-                    <div class="bg-green-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Trauma-Informed Reality</h4>
-                        <i data-lucide="check-circle-2" class="w-8 h-8 mx-auto mb-4 text-green-600"></i>
-                        <p class="text-sm text-gray-700 text-center mb-4">
-                            Recognizes behavior as a coping mechanism for chronic stress and physiological response to trauma <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
-                        </p>
-                        <ul class="text-xs text-gray-700 space-y-2">
-                            <li>• Understanding withdrawal as self-protection</li>
-                            <li>• Seeing missed deadlines as logistical chaos</li>
-                            <li>• Recognizing poor concentration as resource depletion</li>
-                        </ul>
-                    </div>
-                </div>
-
-                <!-- School as Secure Environment -->
-                <div class="bg-green-50 p-8 rounded-lg border-2 border-green-200">
-                    <h4 class="font-bold mb-4 flex items-center gap-2">
-                        <i data-lucide="home" class="w-6 h-6 text-green-600"></i>
-                        The School as a Secure Environment
-                    </h4>
-                    <p class="text-gray-700 mb-4">
-                        Teachers identify their primary role as creating a safe environment where students feel comfortable to "be themselves" and "reach out" for support <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
-                    </p>
-                    <div class="bg-white p-6 rounded border border-green-200">
-                        <p class="text-sm text-gray-700 mb-4">
-                            When the home environment is characterized by <strong>"instability"</strong> and <strong>"constant unknown sadness,"</strong> the school is tasked with providing predictability and security <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
-                        </p>
-                        <div class="bg-green-100 p-4 rounded text-center">
-                            <p class="text-sm font-bold text-green-700">
-                                <i data-lucide="heart" class="w-4 h-4 inline mr-2"></i>
-                                A strong, positive teacher-student relationship functions as a "gateway to mental health support" and resilience when students face adversity <span class="text-gray-500">(Podwinski & Laletas, 2025)</span>.
-                            </p>
-                        </div>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://www.divorcehub.com.au/autism-and-divorce/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Hetherington, 2017</a></p>
                     </div>
                 </div>
             </div>
 
-            <!-- The Whole-School Framework: BSEM -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">The Whole-School Framework: The Berry Street Education Model (BSEM)</h3>
-                <div class="bg-gray-50 p-8 rounded-lg mb-8">
-                    <p class="text-lg leading-relaxed mb-6">
-                        To reduce the negative effects of family breakdown, secondary schools need to move beyond reactive discipline and adopt proactive, trauma-informed teaching approaches. The <strong>Berry Street Education Model (BSEM)</strong> provides a targeted framework for students who may be disengaged or disruptive due to trauma, supporting them to <strong>"heal first, then thrive"</strong> <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
+            <!-- Two-Household Challenges -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Challenges of Living Between Two Households</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        The challenges of living between two households create particular risks for neurodiverse students, as inconsistencies in routines and sensory environments can trigger anxiety and overload.
+                    </p>
+                </div>
+
+                <div class="bg-red-50 p-8 rounded-lg">
+                    <div class="bg-white p-6 rounded border border-red-200">
+                        <p class="text-gray-700 mb-4">
+                            Schools try to address this through "reasonable adjustments," but recent research shows that these adjustments only work well when there is strong collaboration in the "Communication between Parent-Teacher-Child" domain.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://doi.org/10.1017/jsi.2024.1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Page et al., 2024</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Communication Breakdown -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Communication Breakdown</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        In high-conflict divorces, this communication often breaks down, leading to what teachers call "communication uncertainty".
+                    </p>
+                    <p class="text-gray-700">
+                        Teachers frequently face unclear situations about which parents can make key decisions, such as regarding medication or Individualised Education Plans (IEPs), causing delays or loss of essential support.
+                    </p>
+                </div>
+
+                <!-- System Barrier -->
+                <div class="bg-purple-50 p-8 rounded-lg border-l-4 border-purple-400">
+                    <h4 class="font-bold mb-4">From Private Issue to System Barrier</h4>
+                    <div class="bg-white p-6 rounded border border-purple-200">
+                        <p class="text-gray-700">
+                            As a result, failures in parental communication move beyond a private family issue and become a systemic barrier that hinders the student's access to fair education and academic success.
+                        </p>
+                        <p class="text-xs text-gray-500 mt-2">Sources: <a href="https://doi.org/10.1017/jsi.2024.1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Page et al., 2024</a>; <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a></p>
+                    </div>
+                </div>
+            </div>
+  
+        </section>
+
+        <!-- PAGE 6: STRATEGIES -->
+        <section id="strategies" class="page-section hidden fade-in">
+            <h2 class="text-3xl serif-font mb-2">Whole-School and Pedagogical Approaches</h2>
+            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Trauma-Informed Teaching</p>
+
+            <!-- Berry Street Education Model -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">The Berry Street Education Model (BSEM)</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        To reduce the negative effects of family breakdown, secondary schools need to go beyond reactive discipline and adopt proactive, trauma-informed teaching approaches.
+                    </p>
+                    <p class="text-gray-700">
+                        The Berry Street Education Model (BSEM) provides a framework for students who may be disengaged or disruptive due to trauma, supporting them to "heal first, then thrive".
                     </p>
                 </div>
 
                 <!-- BSEM Domains -->
-                <div class="grid md:grid-cols-3 gap-4 mb-8">
-                    <div class="bg-purple-50 p-6 rounded-lg border-2 border-purple-200">
-                        <h4 class="font-bold mb-4 text-center">Body & Relationship</h4>
-                        <i data-lucide="users" class="w-8 h-8 mx-auto mb-4 text-purple-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Initial domains help students establish physical regulation and relational safety, foundational for learning <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
-                        </p>
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-purple-50 p-6 rounded-lg">
+                        <h4 class="font-bold mb-4 text-purple-800">Foundation Domains</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• <strong>Body:</strong> Helps students build physical regulation</li>
+                            <li>• <strong>Relationship:</strong> Establishes relational safety</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 mt-3">Source: <a href="https://aifs.gov.au/resources/short-articles/new-approach-trauma-informed-teaching-teacher-practice-berry-street" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Bailey & Brunzell, 2019</a></p>
                     </div>
-                    <div class="bg-blue-50 p-6 rounded-lg border-2 border-blue-200">
-                        <h4 class="font-bold mb-4 text-center">Stamina</h4>
-                        <i data-lucide="battery-charging" class="w-8 h-8 mx-auto mb-4 text-blue-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Family breakdown often drains emotional energy. This domain focuses on building resilience and academic persistence despite this drain <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
-                        </p>
-                    </div>
-                    <div class="bg-green-50 p-6 rounded-lg border-2 border-green-200">
-                        <h4 class="font-bold mb-4 text-center">Engagement</h4>
-                        <i data-lucide="target" class="w-8 h-8 mx-auto mb-4 text-green-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Provides strategies to support students who have withdrawn psychologically from school, helping them stay motivated despite challenges at home <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.
-                        </p>
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold mb-4 text-blue-800">Growth Domains</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• <strong>Stamina:</strong> Focuses on resilience and emotional intelligence to support academic persistence</li>
+                            <li>• <strong>Engagement:</strong> Provides strategies for students who have withdrawn psychologically, helping them stay motivated despite challenges at home</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 mt-3">Source: <a href="https://aifs.gov.au/resources/short-articles/new-approach-trauma-informed-teaching-teacher-practice-berry-street" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Bailey & Brunzell, 2019</a></p>
                     </div>
                 </div>
             </div>
 
-            <!-- Classroom Implementation -->
-            <div class="mb-16">
-                <h3 class="text-2xl serif-font mb-8">Classroom Implementation: Pedagogical Strategies & Reasonable Adjustments</h3>
-                <div class="bg-gray-50 p-8 rounded-lg mb-8">
-                    <p class="text-lg leading-relaxed mb-6">
-                        For students with special needs experiencing family separation, teaching strategies need to be turned into practical <strong>"reasonable adjustments"</strong> (RAs) to ensure fair access to education <span class="text-gray-500">(Page et al., 2024)</span>.
+            <!-- Classroom Practice and Reasonable Adjustments -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Classroom Practice and Reasonable Adjustments</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        For students with special needs experiencing family separation, teaching strategies must be translated into practical "reasonable adjustments" to ensure fair access to education.
                     </p>
                 </div>
 
-                <!-- Proactive vs Reactive Support -->
-                <div class="grid md:grid-cols-2 gap-6 mb-8">
-                    <div class="bg-red-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Reactive Support</h4>
-                        <i data-lucide="alert-triangle" class="w-8 h-8 mx-auto mb-4 text-red-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Schools often apply adjustments reactively (e.g., after a failure occurs), which is less effective for family breakdown situations <span class="text-gray-500">(Page et al., 2024)</span>.
+                <!-- Proactive Measures -->
+                <div class="bg-green-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4">Proactive vs Reactive Approaches</h4>
+                    <div class="bg-white p-6 rounded border border-green-200">
+                        <p class="text-gray-700 mb-4">
+                            Research shows that schools often apply these adjustments reactively, but supporting students effectively requires proactive measures to reduce logistical challenges across households.
                         </p>
+                        <p class="text-xs text-gray-500 mt-2">Source: <a href="https://doi.org/10.1017/jsi.2024.1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Page et al., 2024</a></p>
                     </div>
-                    <div class="bg-green-50 p-6 rounded-lg">
-                        <h4 class="font-bold mb-4 text-center">Proactive Approach</h4>
-                        <i data-lucide="shield-check" class="w-8 h-8 mx-auto mb-4 text-green-600"></i>
-                        <p class="text-sm text-gray-700 text-center">
-                            Effective support requires a proactive approach to reduce logistical challenges across households <span class="text-gray-500">(Page et al., 2024)</span>.
+                </div>
+
+                <!-- Practical Examples -->
+                <div class="grid md:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-blue-50 p-6 rounded-lg">
+                        <h4 class="font-bold mb-4">Examples of Proactive Adjustments</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Providing duplicate textbooks or digital licenses to prevent anxiety when materials are forgotten during custody transitions</li>
+                            <li>• Enhanced visual schedules, such as interactive magnetic routine charts, to map custody arrangements and reduce uncertainty for students with ASD</li>
+                            <li>• Teacher aides to help students remain included and maintain continuity in the classroom</li>
+                        </ul>
+                    </div>
+                    <div class="bg-yellow-50 p-6 rounded-lg">
+                        <h4 class="font-bold mb-4">Key Considerations</h4>
+                        <ul class="space-y-3 text-sm text-gray-700">
+                            <li>• Students with ASD find dual-household living unpredictable</li>
+                            <li>• Visual schedules help reduce uncertainty</li>
+                            <li>• Consistency between households is ideal but often challenging</li>
+                        </ul>
+                        <p class="text-xs text-gray-500 mt-3">Sources: <a href="https://www.divorcehub.com.au/autism-and-divorce/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Hetherington, 2017</a>; <a href="https://doi.org/10.1017/jsi.2024.1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Page et al., 2024</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Parent Partnerships and Legal Obligations -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Parent Partnerships and Legal Obligations</h3>
+
+                <div class="space-y-6 mb-8">
+                    <p class="text-gray-700">
+                        Supporting students affected by family breakdown requires managing complex and sometimes adversarial parental relationships while strictly following legal requirements.
+                    </p>
+                </div>
+
+                <!-- School as Neutral Zone -->
+                <div class="bg-gray-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4">The School as a Safe Space</h4>
+                    <div class="bg-white p-6 rounded border border-gray-200">
+                        <p class="text-gray-700">
+                            Educators must remain neutral, keeping the school a "demilitarized" safe space rather than a place to resolve family conflicts.
                         </p>
                     </div>
                 </div>
 
-                <!-- Practical Adjustments -->
-                <div class="bg-purple-50 p-8 rounded-lg mb-8">
-                    <h4 class="font-bold mb-6">Practical Adjustments for Logistical Stress</h4>
-                    <div class="overflow-x-auto mb-6">
-                        <table class="w-full custom-table text-sm bg-white">
-                            <thead>
-                                <tr class="bg-gray-100">
-                                    <th class="w-1/3">Adjustment</th>
-                                    <th class="w-1/3">How It Works</th>
-                                    <th class="w-1/3">Benefit</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="book-open" class="w-4 h-4 inline mr-2"></i>Duplicate Materials</td>
-                                    <td>Providing duplicate textbooks or digital licenses</td>
-                                    <td class="text-green-600">Prevents anxiety during custody transitions <span class="text-gray-500">(Page et al., 2024)</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="clock" class="w-4 h-4 inline mr-2"></i>Flexible Assessment</td>
-                                    <td>Interpret missed deadlines as instability, not defiance</td>
-                                    <td class="text-green-600">Supports learning continuity through IEPs <span class="text-gray-500">(Podwinski & Laletas, 2025)</span></td>
-                                </tr>
-                                <tr>
-                                    <td class="font-bold text-gray-700"><i data-lucide="shield" class="w-4 h-4 inline mr-2"></i>Educational Welfare</td>
-                                    <td>Principals make decisions based on child's best interests</td>
-                                    <td class="text-green-600">Prioritizes educational welfare over parental conflict <span class="text-gray-500">(NSW Government, 2021)</span></td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <!-- Legal Requirements -->
+                <div class="bg-blue-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4">Legal Requirements</h4>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            Legally, unless a court order says otherwise, both parents usually share parental responsibility.
+                        </p>
+                        <p class="text-gray-700">
+                            This means non-residential parents generally have the right to attend school events and receive documents like school reports, a detail often misunderstood in high-conflict situations.
+                        </p>
                     </div>
+                    <p class="text-xs text-gray-500 mt-2">Source: <a href="https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">NSW Government, 2021</a></p>
+                </div>
+
+                <!-- Complex Situations -->
+                <div class="bg-yellow-50 p-8 rounded-lg mb-6">
+                    <h4 class="font-bold mb-4">Complex Situations</h4>
+                    <div class="space-y-4">
+                        <p class="text-gray-700">
+                            We also face "grey areas" when third parties are involved.
+                        </p>
+                        <p class="text-gray-700">
+                            For example, step-parents collecting a child from school need explicit consent from the biological parent, adding complexity to communication.
+                        </p>
+                        <p class="text-gray-700">
+                            Finally, while schools do not enforce Family Court orders, we must check the terms of any Apprehended Violence Orders (AVOs) to protect student safety. At the same time, we must balance confidentiality with the duty to support distressed students.
+                        </p>
+                    </div>
+                    <p class="text-xs text-gray-500 mt-2">Sources: <a href="https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">NSW Government, 2021</a>; <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">Podwinski & Laletas, 2025</a></p>
+                </div>
+            </div>
+
+            <!-- Connecting to Community Support -->
+            <div class="mb-12">
+                <h3 class="text-2xl serif-font mb-8">Connecting to Community Support</h3>
+
+                <div class="bg-green-50 p-8 rounded-lg">
+                    <h4 class="font-bold mb-4">Understanding Professional Boundaries</h4>
+                    <div class="bg-white p-6 rounded border border-green-200">
+                        <p class="text-gray-700 mb-4">
+                            I understand my limits as an educator.
+                        </p>
+                        <p class="text-gray-700 mb-4">
+                            I do not have the ability to fix a student's home life or act as a therapist.
+                        </p>
+                        <p class="text-gray-700">
+                            My role is to act as a bridge. When a student's needs go beyond what I can manage, such as severe anxiety or safety concerns. I will report the case to the school student wellbeing team, the Principal etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+                          </div>
                 </div>
 
                 <!-- Specialized Adjustments for ASD -->
@@ -1566,197 +1323,9 @@
 
         </section>
 
-              </div>
         </section>
 
-        <!-- PAGE 7: LEGAL -->
-        <section id="legal" class="page-section hidden fade-in">
-            <h2 class="text-3xl serif-font mb-2">Legal Framework & Obligations</h2>
-            <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">Family Law Act & Educational Responsibilities</p>
-
-            <!-- I. Maintaining Neutrality: The School's Legal Position -->
-            <div class="mb-16">
-                <div class="flex items-center gap-4 mb-8">
-                    <div class="bg-gradient-to-br from-slate-100 to-slate-200 p-4 rounded-full">
-                        <i data-lucide="shield" class="w-8 h-8 text-slate-700"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl serif-font mb-2">School as Neutral Ground</h3>
-                        <p class="text-sm text-gray-600">The Legal Foundation</p>
-                    </div>
-                </div>
-
-                <!-- Visual Neutrality Diagram -->
-                <div class="bg-gradient-to-br from-blue-50 to-indigo-50 p-8 rounded-lg mb-8">
-                    <div class="grid md:grid-cols-3 gap-6 mb-8">
-                        <!-- Left Parent -->
-                        <div class="text-center">
-                            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-4">
-                                <i data-lucide="user" class="w-12 h-12 text-blue-600 mx-auto mb-3"></i>
-                                <p class="font-semibold text-gray-800">Parent A</p>
-                                <p class="text-xs text-gray-600">Residential</p>
-                            </div>
-                            <div class="text-xs text-gray-500">✓ School Access</div>
-                            <div class="text-xs text-gray-500">✓ Information Rights</div>
-                        </div>
-
-                        <!-- School -->
-                        <div class="text-center">
-                            <div class="bg-gradient-to-br from-slate-100 to-slate-200 p-8 rounded-lg border-4 border-slate-300 mb-4 relative">
-                                <div class="absolute -top-2 left-1/2 transform -translate-x-1/2 bg-white px-3 py-1 rounded-full border border-slate-300">
-                                    <span class="text-xs font-bold text-slate-700">SCHOOL</span>
-                                </div>
-                                <i data-lucide="school" class="w-16 h-16 text-slate-700 mb-2"></i>
-                                <p class="font-bold text-slate-800">"Demilitarized Zone"</p>
-                                <p class="text-xs text-slate-600 mt-2">Safe Space</p>
-                            </div>
-                            <div class="bg-slate-100 p-3 rounded text-xs">
-                                <p class="font-semibold text-slate-700">🛡️ NEUTRALITY</p>
-                                <p class="text-gray-600">No dispute resolution</p>
-                            </div>
-                        </div>
-
-                        <!-- Right Parent -->
-                        <div class="text-center">
-                            <div class="bg-white p-6 rounded-lg shadow-sm border border-gray-200 mb-4">
-                                <i data-lucide="user" class="w-12 h-12 text-purple-600 mx-auto mb-3"></i>
-                                <p class="font-semibold text-gray-800">Parent B</p>
-                                <p class="text-xs text-gray-600">Non-Residential</p>
-                            </div>
-                            <div class="text-xs text-gray-500">✓ School Access</div>
-                            <div class="text-xs text-gray-500">✓ Information Rights</div>
-                        </div>
-                    </div>
-
-                    <!-- Central Principle -->
-                    <div class="bg-white p-6 rounded-lg border-l-4 border-slate-500">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i data-lucide="star" class="w-6 h-6 text-slate-600"></i>
-                            <h4 class="font-bold text-slate-800">Fundamental Principle</h4>
-                        </div>
-                        <p class="text-gray-700">
-                            The <strong class="text-slate-700">paramount consideration</strong> is always the <strong class="text-slate-700">child's best educational and welfare interests</strong> above parental conflicts <span class="text-gray-500">(NSW Government, 2021)</span>.
-                        </p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- II. Legal Assumption of Shared Parental Responsibility -->
-            <div class="mb-16">
-                <div class="flex items-center gap-4 mb-8">
-                    <div class="bg-gradient-to-br from-purple-100 to-purple-200 p-4 rounded-full">
-                        <i data-lucide="users" class="w-8 h-8 text-purple-700"></i>
-                    </div>
-                    <div>
-                        <h3 class="text-2xl serif-font mb-2">Shared Parental Responsibility</h3>
-                        <p class="text-sm text-gray-600">Legal Framework & Communication Challenges</p>
-                    </div>
-                </div>
-
-                <!-- Visual Parental Responsibility Flow -->
-                <div class="bg-gradient-to-br from-purple-50 to-pink-50 p-8 rounded-lg mb-8">
-                    <!-- Default State -->
-                    <div class="bg-white p-6 rounded-lg shadow-sm mb-6">
-                        <div class="flex items-center gap-3 mb-4">
-                            <i data-lucide="gavel" class="w-6 h-6 text-purple-600"></i>
-                            <h4 class="font-bold text-purple-800">Legal Default (No Court Order)</h4>
-                        </div>
-                        <div class="grid md:grid-cols-2 gap-6">
-                            <div class="bg-purple-50 p-4 rounded-lg text-center">
-                                <i data-lucide="scale" class="w-10 h-10 text-purple-600 mx-auto mb-2"></i>
-                                <p class="font-semibold text-gray-800">50/50 Shared</p>
-                                <p class="text-xs text-gray-600">Equal responsibility for both parents</p>
-                            </div>
-                            <div class="bg-blue-50 p-4 rounded-lg text-center">
-                                <i data-lucide="book-open" class="w-10 h-10 text-blue-600 mx-auto mb-2"></i>
-                                <p class="font-semibold text-gray-800">Full Access</p>
-                                <p class="text-xs text-gray-600">Both parents can participate in school activities</p>
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Communication Challenges -->
-                    <h4 class="font-bold text-lg mb-4 text-center text-gray-700">Common "Grey Areas" Teachers Face</h4>
-                    <div class="grid md:grid-cols-3 gap-4">
-                        <!-- Third Party Challenge -->
-                        <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-orange-400">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="user-plus" class="w-5 h-5 text-orange-600"></i>
-                                <h5 class="font-semibold text-orange-800">Third Parties</h5>
-                            </div>
-                            <div class="space-y-2 text-sm">
-                                <div class="flex items-start gap-2">
-                                    <span class="text-orange-500">•</span>
-                                    <span>Step-parents need <strong>explicit consent</strong> to collect children</span>
-                                </div>
-                                <div class="flex items-start gap-2">
-                                    <span class="text-orange-500">•</span>
-                                    <span>Grandparents have <strong>no automatic rights</strong></span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Communication Breakdown -->
-                        <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-red-400">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="message-square-x" class="w-5 h-5 text-red-600"></i>
-                                <h5 class="font-semibold text-red-800">Communication Breakdown</h5>
-                            </div>
-                            <div class="space-y-2 text-sm">
-                                <div class="flex items-start gap-2">
-                                    <span class="text-red-500">•</span>
-                                    <span>Uncertainty about who makes decisions</span>
-                                </div>
-                                <div class="flex items-start gap-2">
-                                    <span class="text-red-500">•</span>
-                                    <span>Conflicting instructions from parents</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- Safety Considerations -->
-                        <div class="bg-white p-5 rounded-lg shadow-sm border-l-4 border-green-400">
-                            <div class="flex items-center gap-2 mb-3">
-                                <i data-lucide="shield-check" class="w-5 h-5 text-green-600"></i>
-                                <h5 class="font-semibold text-green-800">Safety First</h5>
-                            </div>
-                            <div class="space-y-2 text-sm">
-                                <div class="flex items-start gap-2">
-                                    <span class="text-green-500">•</span>
-                                    <span>Check <strong>AVO terms</strong> for safety</span>
-                                </div>
-                                <div class="flex items-start gap-2">
-                                    <span class="text-green-500">•</span>
-                                    <span>Maintain confidentiality while protecting students</span>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Action Cards -->
-                <div class="bg-gradient-to-r from-amber-50 to-orange-50 p-6 rounded-lg">
-                    <div class="flex items-center gap-3 mb-4">
-                        <i data-lucide="help-circle" class="w-6 h-6 text-amber-600"></i>
-                        <h4 class="font-bold text-amber-800">When in Doubt...</h4>
-                    </div>
-                    <div class="grid md:grid-cols-2 gap-4 text-sm">
-                        <div class="bg-white p-4 rounded border border-amber-200">
-                            <p class="font-semibold text-amber-700 mb-2">✓ Document Everything</p>
-                            <p class="text-gray-600">Keep records of conversations and decisions</p>
-                        </div>
-                        <div class="bg-white p-4 rounded border border-amber-200">
-                            <p class="font-semibold text-amber-700 mb-2">✓ Seek Guidance</p>
-                            <p class="text-gray-600">Consult school leadership for complex situations</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            
-            
-            
-            
+        <!-- PAGE 7: RESOURCES -->
             
             <!-- Quick Reference Summary -->
             <div class="bg-gradient-to-br from-teal-50 to-cyan-50 p-8 rounded-lg mb-8">
@@ -1794,7 +1363,6 @@
             </div>
         </section>
 
-        <!-- PAGE 8: RESOURCES -->
         <section id="resources" class="page-section hidden fade-in">
             <h2 class="text-3xl serif-font mb-2">Resources</h2>
             <p class="text-gray-500 uppercase text-xs tracking-widest mb-8">External Resources and Crisis Support</p>
@@ -1885,8 +1453,8 @@
                                 <p class="text-xs text-gray-600"><a href="https://au.reachout.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">au.reachout.com</a> - Online resources for coping with parental separation <span class="text-gray-500">(AIFS, 2020)</span>.</p>
                             </div>
                             <div class="bg-white p-3 rounded border border-purple-200">
-                                <h5 class="font-semibold text-sm text-purple-800">Youth Beyond Blue</h5>
-                                <p class="text-xs text-gray-600"><a href="https://www.youthbeyondblue.com/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">youthbeyondblue.com</a> - Mental health support addressing stress/anxiety from family breakdown <span class="text-gray-500">(AIFS, 2020)</span>.</p>
+                                <h5 class="font-semibold text-sm text-purple-800">Beyond Blue</h5>
+                                <p class="text-xs text-gray-600"><a href="https://www.beyondblue.org.au/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.beyondblue.org.au/</a> - Mental health support addressing stress/anxiety from family breakdown <span class="text-gray-500">(AIFS, 2020)</span>.</p>
                             </div>
                             <div class="bg-white p-3 rounded border border-purple-200">
                                 <h5 class="font-semibold text-sm text-purple-800">Headspace</h5>
@@ -1946,10 +1514,49 @@
                             <i data-lucide="check-circle-2" class="w-5 h-5 text-purple-500 mt-0.5"></i>
                             <div>
                                 <h5 class="font-semibold text-sm">Berry Street Education Model (BSEM)</h5>
-                                <p class="text-xs text-gray-600"><a href="https://www.berrystreet.org.au/what-we-do/education-and-training/berry-street-education-model/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">berrystreet.org.au/bsem</a> - Resources on trauma-informed teaching providing theoretical grounding to implement strategies that focus on "healing first, then thriving" <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.</p>
+                                <p class="text-xs text-gray-600"><a href="https://www.berrystreet.org.au/learning-and-resources/berry-street-education-model" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">berrystreet.org.au/bsem</a> - Resources on trauma-informed teaching providing theoretical grounding to implement strategies that focus on "healing first, then thriving" <span class="text-gray-500">(Bailey & Brunzell, 2019)</span>.</p>
                             </div>
                         </li>
                     </ul>
+                </div>
+
+            <!-- References -->
+            <div class="mt-16 pt-8 border-t-2 border-gray-800">
+                <h3 class="text-2xl serif-font mb-8 text-center">References</h3>
+                <div class="space-y-3 text-sm">
+                    <p class="text-gray-700">
+                        Australian Bureau of Statistics. (2024, August 16). <em>Marriages and Divorces, Australia</em>. Australian Bureau of Statistics. <a href="https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.abs.gov.au/statistics/people/people-and-communities/marriages-and-divorces-australia/latest-release</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Australian Institute of Family Studies. (2020, June). <em>Child wellbeing after parental separation</em>. Aifs.gov.au. <a href="https://aifs.gov.au/research/research-snapshots/child-wellbeing-after-parental-separation" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://aifs.gov.au/research/research-snapshots/child-wellbeing-after-parental-separation</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Australian Institute of Family Studies. (2025, February). <em>Divorces in Australia</em>. Aifs.gov.au. <a href="https://aifs.gov.au/research/facts-and-figures/divorces-australia-2024" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://aifs.gov.au/research/facts-and-figures/divorces-australia-2024</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Bailey, B., & Brunzell, T. (2019). A new approach to trauma-informed teaching: Teacher practice with the Berry Street Education Model. Aifs.gov.au. <a href="https://aifs.gov.au/resources/short-articles/new-approach-trauma-informed-teaching-teacher-practice-berry-street" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://aifs.gov.au/resources/short-articles/new-approach-trauma-informed-teaching-teacher-practice-berry-street</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Clark, S. (2023). <em>School refusal</em>. Aph.gov.au. <a href="https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2022-23/SchoolRefusal" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.aph.gov.au/About_Parliament/Parliamentary_departments/Parliamentary_Library/Research/Research_Papers/2022-23/SchoolRefusal</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Hetherington, J. (2017, August 29). <em>Autism and Divorce - Strategies to help children and parents cope</em>. Divorce Hub Brisbane and Gold Coast. <a href="https://www.divorcehub.com.au/autism-and-divorce/" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.divorcehub.com.au/autism-and-divorce/</a>
+                    </p>
+                    <p class="text-gray-700">
+                        NSW Government. (2021, July 8). <em>Family law guidelines</em>. Education.nsw.gov.au. <a href="https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://education.nsw.gov.au/rights-and-accountability/legal-issues-bulletins/family-law-guidelines</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Orygen. (2025). <em>How parenting can change the adolescent brain and improve mental health: new research</em>. Orygen. <a href="https://www.orygen.org.au/About/News-And-Events/2025/How-parenting-can-change-the-adolescent-brain-and" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://www.orygen.org.au/About/News-And-Events/2025/How-parenting-can-change-the-adolescent-brain-and</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Page, A., Barr, M., Rendoth, T., Roche, L., Foggett, J. L., Leonard, C., & Duncan, J. (2024). Making reasonable adjustments for students With disability in Australian mainstream classrooms: A scoping review. <em>Australasian Journal of Special and Inclusive Education</em>, 48(1), 46–63. <a href="https://doi.org/10.1017/jsi.2024.1" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doi.org/10.1017/jsi.2024.1</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Podwinski, S., & Laletas, S. (2025). "Having Their Best Interest at Heart": The Role of Teachers Working with Adolescents of High-Conflict Divorce. <em>Pastoral Care in Education</em>, 1–17. <a href="https://doi.org/10.1080/02643944.2025.2541786" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doi.org/10.1080/02643944.2025.2541786</a>
+                    </p>
+                    <p class="text-gray-700">
+                        Turpyn, C. C., Poon, J. A., Ross, C. E., Thompson, J. C., & Chaplin, T. M. (2017). Associations between parent emotional arousal and regulation and adolescents' affective brain response. <em>Social Development</em>, 27(1), 3–18. <a href="https://doi.org/10.1111/sode.12263" target="_blank" rel="noopener noreferrer" class="text-blue-600 hover:underline">https://doi.org/10.1111/sode.12263</a>
+                    </p>
                 </div>
             </div>
         </section>
